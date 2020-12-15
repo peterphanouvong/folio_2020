@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+::selection {
+  background: rgba($color: #000000, $alpha: 0.99); /* WebKit/Blink Browsers */
+  color: white;
+}
+::-moz-selection {
+  background: rgba($color: #000000, $alpha: 0.99); /* Gecko Browsers */
+  color: white;
+}
+
+body {
+  font-family: "Mabry Pro";
+}
+
+.container {
+  width: 1400px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 100;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-size: 1.25rem;
+  font-weight: 100;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  transition: 0.2s ease;
+
+  &:hover {
+    color: #778485;
+    transition: 0.2s ease;
+  }
+}
+
+.header {
+  padding-top: 75px;
+  .header-inner {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+
+    ul {
+      list-style: none;
+      line-height: 2.25rem;
+      text-align: right;
+    }
+  }
+  .call-to-action {
+    padding: 3.125rem 0 1.75rem 0;
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+.index {
+  padding: 1.75rem 0;
+
+  .piece {
+    margin-top: 3.5rem;
+    h2 {
+      margin-bottom: 10px;
+    }
+  }
+  border-bottom: 1px solid #ccc;
+}
