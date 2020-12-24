@@ -5,14 +5,25 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import React from "react"
+import React, { useState } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.scss"
+import AboutWindows from "./about/aboutWindows"
 
 const Layout = ({ children }) => {
+  const [windowsActive, setWindowsActive] = useState(false)
+
+  const showAboutWindows = () => {
+    setWindowsActive(true)
+  }
+
+  const closeAboutWindows = () => {
+    setWindowsActive(false)
+  }
+
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -25,8 +36,11 @@ const Layout = ({ children }) => {
 
   return (
     <div className="container">
-      <Header />
+      <Header showAboutWindows={showAboutWindows} />
       <div>
+        {windowsActive && (
+          <AboutWindows closeAboutWindows={closeAboutWindows} />
+        )}
         <main>{children}</main>
         <footer>© {new Date().getFullYear()}</footer>
       </div>

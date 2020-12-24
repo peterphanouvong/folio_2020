@@ -10,7 +10,9 @@ const IndexPage = () => (
   <>
     <SEO title="Folio" />
     <div className="index">
-      <h4>Selected work</h4>
+      <p style={{ textTransform: "uppercase", fontWeight: 100 }}>
+        Selected work
+      </p>
       <div className="selected-work">
         <Piece
           title="Westside Volleyball Club"

@@ -46,11 +46,11 @@ h5 {
 a {
   text-decoration: none;
   color: #000;
-  transition: 0.2s ease;
+  transition: 0.1s ease;
 
   &:hover {
-    color: #778485;
-    transition: 0.2s ease;
+    background-color: black;
+    color: white;
   }
 }
 
@@ -82,4 +82,21 @@ a {
     }
   }
   border-bottom: 1px solid #ccc;
+}
+
+.contact {
+  padding: 1.75rem 0;
+  border-bottom: 1px solid #ccc;
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .contact-unit {
+      margin: 3rem 0;
+
+      h4 {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
 }

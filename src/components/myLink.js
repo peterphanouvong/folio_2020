@@ -3,8 +3,16 @@ import { Link } from "gatsby"
 
 const MyLink = ({ setCurrentPage, title, to, active }) => {
   return (
-    <div onClick={() => setCurrentPage(title)}>
-      {active ? <Link to={to}>*{title}*</Link> : <Link to={to}>{title}</Link>}
+    <div>
+      {active ? (
+        <Link onClick={() => setCurrentPage(title)} to={to}>
+          *{title}*
+        </Link>
+      ) : (
+        <Link onClick={() => setCurrentPage(title)} to={to}>
+          {title}
+        </Link>
+      )}
     </div>
   )
 }

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 import MyLink from "./myLink"
 
-const Navbar = () => {
+const Navbar = ({ showAboutWindows }) => {
   const [currentPage, setCurrentPage] = useState("HOME")
   useEffect(() => {
     if (window.location.pathname === "/contact") {
@@ -22,11 +22,11 @@ const Navbar = () => {
           </h4>
         </li>
         <li>
-          <h4>
+          <h4 onClick={showAboutWindows}>
             <MyLink
               setCurrentPage={setCurrentPage}
               title="ABOUT"
-              to="/about"
+              to={currentPage == "HOME" ? "/" : "/contact"}
               active={currentPage == "ABOUT"}
             />
           </h4>
