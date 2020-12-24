@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react"
-import { useHistory } from "react-router-dom"
+import React, { useState, useEffect, useHistory } from "react"
 import MyLink from "./myLink"
 
 const Navbar = ({ showAboutWindows }) => {
