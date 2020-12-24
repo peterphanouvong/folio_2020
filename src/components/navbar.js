@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from "react"
+import { useHistory } from "react-router-dom"
 import MyLink from "./myLink"
 
 const Navbar = ({ showAboutWindows }) => {
+  const history = useHistory()
   const [currentPage, setCurrentPage] = useState("HOME")
   useEffect(() => {
-    if (window.location.pathname === "/contact") {
+    if (history.location.pathname === "/contact") {
       setCurrentPage("CONTACT")
     }
-  }, [window.location.pathname])
+  }, [history.location.pathname])
   return (
     <>
       <ul>
