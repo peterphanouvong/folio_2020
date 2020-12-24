@@ -11,11 +11,11 @@ const Header = ({ showAboutWindows }) => (
       </h1>
       <Navbar showAboutWindows={showAboutWindows} />
     </div>
-    <div className="call-to-action">
+    {/* <div className="call-to-action">
       <h5>
         <Link to="/contact">Available for freelance work -{">"}</Link>
       </h5>
-    </div>
+    </div> */}
   </header>
 )
 
