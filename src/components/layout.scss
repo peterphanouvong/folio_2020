@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Mabry Pro";
+  src: url("./Mabry\ Pro.otf");
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -20,6 +25,9 @@ body {
 .container {
   width: 1400px;
   margin: auto;
+  @media only screen and (max-width: 1440px) {
+    width: 80%;
+  }
 }
 
 h1 {
