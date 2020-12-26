@@ -40,7 +40,7 @@ const Contact = () => {
               href="https://www.instagram.com/peterphanouvong/?hl=en"
               target="_blank"
             >
-              @peterphanouvong@gmail.com ↗
+              @peterphanouvong ↗
             </a>
           </h2>
         </div>
@@ -49,7 +49,7 @@ const Contact = () => {
           <h4>github</h4>
           <h2>
             <a href="https://github.com/peterphanouvong" target="_blank">
-              /peterphanouvong@gmail.com ↗
+              /peterphanouvong ↗
             </a>
           </h2>
         </div>
