@@ -17,7 +17,7 @@ const IndexPage = () => (
         <Piece
           title="Westside Volleyball Club"
           tagline="Web design & development"
-          link="https://www.westsidevolleyballclub.com/"
+          link="https://westsidevolleyballclub.com/"
         />
         <Piece
           title="BITSA"
