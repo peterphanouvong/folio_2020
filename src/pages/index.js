@@ -15,9 +15,9 @@ const IndexPage = () => (
       </p>
       <div className="selected-work">
         <Piece
-          title="Westside Volleyball Club"
-          tagline="Web design & development"
-          link="https://westsidevolleyballclub.com/"
+          title="AGENCY (Mel River Clone)"
+          tagline="Web development"
+          link="https://amazing-torvalds-1e6281.netlify.app/"
         />
         <Piece
           title="BITSA"
