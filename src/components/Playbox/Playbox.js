@@ -5,7 +5,7 @@ import * as THREE from "three";
 import "./Playbox.css";
 
 const Box = (props) => {
-  // This reference will give us direct access to the mesh so we can animate it
+  // This reference will give us direct access to the mesh so we can animate it dsa
   const mesh = useRef();
 
   // Set up state for the hovered and active state

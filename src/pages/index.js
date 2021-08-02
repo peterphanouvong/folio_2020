@@ -3,7 +3,7 @@ import React from "react";
 import "./index.css";
 import SEO from "../components/seo";
 import { Piece } from "../components/Piece/Piece";
-import { Playbox } from "../components/PlayBox/Playbox";
+// import { Playbox } from "../components/PlayBox/Playbox";
 
 const IndexPage = () => (
   <>
@@ -24,15 +24,13 @@ const IndexPage = () => (
             link="https://bitsa.org.au/home"
           />
           <Piece
-            title="Smart Brain"
+            title="YZCPhotography"
             tagline="web design &amp; development"
-            link="https://smart-brain-phanouvong.herokuapp.com/"
+            link="https://hzc-proto.herokuapp.com/"
           />
         </div>
       </div>
-      <div className="right flex-1">
-        <Playbox />
-      </div>
+      <div className="right flex-1">{/* <Playbox /> */}</div>
     </div>
   </>
 );
