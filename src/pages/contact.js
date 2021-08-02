@@ -1,61 +1,76 @@
-import React from "react"
-import resume from "../files/resume.pdf"
+import React from "react";
+
+import "./contact.css";
+import resume from "../files/resume-2021-07-08.pdf";
+import SEO from "../components/seo";
 
 const Contact = () => {
   return (
-    <div className="contact">
-      <p style={{ marginBottom: "2rem" }}>CONTACT INFO</p>
-      <div className="contact-grid">
-        <div className="contact-unit">
-          <h4>email</h4>
-          <h2>
-            <a href="mailto:peterphanouvong@gmail.com">
-              peterphanouvong@gmail.com ↗
-            </a>
-          </h2>
-        </div>
-        <div className="contact-unit">
-          <h4>resume</h4>
-          <h2>
-            <a download="PeterPhanouvong_resume.pdf" href={resume}>
-              PeterPhanouvong_resume.pdf ↗
-            </a>
-          </h2>
-        </div>
-        <div className="contact-unit">
-          <h4>linkedin</h4>
-          <h2>
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/peter-phanouvong-895b67134/"
-            >
-              /peter-phanouvong-895b67134 ↗
-            </a>
-          </h2>
-        </div>
-        <div className="contact-unit">
-          <h4>instagram</h4>
-          <h2>
-            <a
-              href="https://www.instagram.com/peterphanouvong/?hl=en"
-              target="_blank"
-            >
-              @peterphanouvong ↗
-            </a>
-          </h2>
-        </div>
+    <>
+      <SEO title="Contact" />
+      <div className="contact">
+        <span className="label">contact information</span>
 
-        <div className="contact-unit">
-          <h4>github</h4>
-          <h2>
-            <a href="https://github.com/peterphanouvong" target="_blank">
-              /peterphanouvong ↗
-            </a>
-          </h2>
+        <hr />
+
+        <div className="contact__grid">
+          <div className="contact__unit">
+            <h2>
+              <a href="mailto:peterphanouvong@gmail.com">
+                peterphanouvong@gmail.com ↗
+              </a>
+            </h2>
+            <p>email</p>
+          </div>
+          <div className="contact__unit">
+            <h2>
+              <a download="peter-phanouvong_resume.pdf" href={resume}>
+                peter-phanouvong_resume.pdf ↗
+              </a>
+            </h2>
+            <p>resume</p>
+          </div>
+          <div className="contact__unit">
+            <h2>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.linkedin.com/in/peter-phanouvong-895b67134/"
+              >
+                /peter-phanouvong-895b67134 ↗
+              </a>
+            </h2>
+            <p>linkedin</p>
+          </div>
+          <div className="contact__unit">
+            <h2>
+              <a
+                href="https://www.instagram.com/petestudies/?hl=en"
+                target="_blank"
+                rel="noreferrer"
+              >
+                @petestudies ↗
+              </a>
+            </h2>
+            <p>instagram</p>
+          </div>
+
+          <div className="contact__unit">
+            <h2>
+              <a
+                href="https://github.com/peterphanouvong"
+                rel="noreferrer"
+                target="_blank"
+              >
+                /peterphanouvong ↗
+              </a>
+            </h2>
+            <p>github</p>
+          </div>
         </div>
       </div>
-    </div>
-  )
-}
+    </>
+  );
+};
 
-export default Contact
+export default Contact;

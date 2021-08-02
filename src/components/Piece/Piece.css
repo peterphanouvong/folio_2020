@@ -1,0 +1,7 @@
+.piece {
+  margin: 36px 0;
+}
+
+.piece__title {
+  padding-bottom: var(--g-spacer-small);
+}

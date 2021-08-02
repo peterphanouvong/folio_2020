@@ -1,37 +1,40 @@
-import React from "react"
-import { Link } from "gatsby"
-import "./index.scss"
+import React from "react";
 
-import Image from "../components/image"
-import SEO from "../components/seo"
-import Piece from "../components/piece"
+import "./index.css";
+import SEO from "../components/seo";
+import { Piece } from "../components/Piece/Piece";
+import { Playbox } from "../components/PlayBox/Playbox";
 
 const IndexPage = () => (
   <>
     <SEO title="Folio" />
-    <div className="index">
-      <p style={{ textTransform: "uppercase", fontWeight: 100 }}>
-        Selected work
-      </p>
-      <div className="selected-work">
-        <Piece
-          title="AGENCY (Mel River Clone)"
-          tagline="Web development"
-          link="https://amazing-torvalds-1e6281.netlify.app/"
-        />
-        <Piece
-          title="BITSA"
-          tagline="Web design & development"
-          link="https://bitsa.org.au/home"
-        />
-        <Piece
-          title="Smart Brain"
-          tagline="Web design & development"
-          link="https://smart-brain-phanouvong.herokuapp.com/"
-        />
+    <span className="label">selected work</span>
+    <hr />
+    <div className="home">
+      <div className="left flex-1">
+        <div className="home__selected-work">
+          <Piece
+            title="AGENCY (Mel River Clone)"
+            tagline="web development"
+            link="https://amazing-torvalds-1e6281.netlify.app/"
+          />
+          <Piece
+            title="BITSA"
+            tagline="web design &amp; development"
+            link="https://bitsa.org.au/home"
+          />
+          <Piece
+            title="Smart Brain"
+            tagline="web design &amp; development"
+            link="https://smart-brain-phanouvong.herokuapp.com/"
+          />
+        </div>
+      </div>
+      <div className="right flex-1">
+        <Playbox />
       </div>
     </div>
   </>
-)
+);
 
-export default IndexPage
+export default IndexPage;

@@ -5,24 +5,23 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import React, { useState } from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import React, { useState } from "react";
+import PropTypes from "prop-types";
+import { useStaticQuery, graphql } from "gatsby";
 
-import Header from "./header"
-import "./layout.scss"
-import AboutWindows from "./about/aboutWindows"
+import { Header } from "./Header/Header";
+import { AboutWindows } from "./AboutWindows/AboutWindows";
 
 const Layout = ({ children }) => {
-  const [windowsActive, setWindowsActive] = useState(false)
+  const [windowsActive, setWindowsActive] = useState(false);
 
   const showAboutWindows = () => {
-    setWindowsActive(true)
-  }
+    setWindowsActive(true);
+  };
 
   const closeAboutWindows = () => {
-    setWindowsActive(false)
-  }
+    setWindowsActive(false);
+  };
 
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -32,24 +31,25 @@ const Layout = ({ children }) => {
         }
       }
     }
-  `)
+  `);
 
   return (
-    <div className="container">
+    <div className="container" id={data.title}>
       <Header showAboutWindows={showAboutWindows} />
       <div>
         {windowsActive && (
           <AboutWindows closeAboutWindows={closeAboutWindows} />
         )}
         <main>{children}</main>
+        <hr />
         <footer>© {new Date().getFullYear()}</footer>
       </div>
     </div>
-  )
-}
+  );
+};
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-}
+};
 
-export default Layout
+export default Layout;

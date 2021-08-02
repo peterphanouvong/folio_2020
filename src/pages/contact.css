@@ -1,0 +1,12 @@
+.contact__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact__unit {
+  margin: 36px 0;
+}
+
+.contact__unit > h2 {
+  padding-bottom: var(--g-spacer-small);
+}

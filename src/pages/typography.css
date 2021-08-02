@@ -1,0 +1,63 @@
+/* 200,400,600,700,900 */
+h1,
+.heading-1 {
+  font-weight: var(--g-fw-medium);
+  font-size: var(--g-fs-2x-large);
+  line-height: 4.75rem;
+}
+
+h2,
+.heading-2 {
+  font-weight: var(--g-fw-medium);
+  font-size: var(--g-fs-x-large);
+  /* line-height: 4rem; */
+}
+
+h3,
+.heading-3 {
+  font-weight: var(--g-fw-medium);
+  font-size: var(--g-fs-large);
+  line-height: 3.375rem;
+}
+
+h4,
+.heading-4 {
+  font-weight: var(--g-fw-medium);
+  font-size: var(--g-fs-medium);
+  line-height: 2.875rem;
+}
+
+h5,
+.heading-5 {
+  font-weight: var(--g-fw-medium);
+  font-size: var(--g-fs-small);
+  line-height: 2.375rem;
+}
+
+p {
+  font-size: var(--g-fs-small);
+}
+
+.label {
+  font-weight: var(--g-fw-normal);
+  font-size: var(--g-fs-x-small);
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+}
+
+.input-label {
+  font-size: var(--g-fs-x-small);
+  margin-bottom: var(--g-spacer-x-small);
+  font-weight: bold;
+  letter-spacing: 0.4px;
+}
+
+.error-text {
+  font-weight: var(--g-fw-normal);
+  font-size: var(--g-fs-x-small);
+  color: var(--g-color-error);
+}
+
+.window-title {
+  font-size: var(--g-fs-small);
+}
